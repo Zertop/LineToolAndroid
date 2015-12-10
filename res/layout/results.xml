@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:baselineAligned="false"
+                tools:context=".ResultsActivity"
+                android:weightSum="1"
+>
+
+    <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/backgroundStart"
+            android:src="@drawable/back"
+            android:scaleType="centerCrop"/>
+
+    <ImageView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:id="@+id/zertopLogo"
+            android:src="@drawable/logo"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"/>
+
+    <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textMultiLine"
+            android:ems="10"
+            android:id="@+id/resultsTextbox"
+            android:alpha="0.5"
+            android:background="#000"
+            android:text="You shouldn&apos;t see this!"
+            android:textColor="#FFF"
+            android:enabled="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:textAlignment="center"
+            android:singleLine="false"
+            android:textIsSelectable="false"
+            android:typeface="normal"
+            android:layout_below="@+id/zertopLogo"
+            android:padding="10dp"
+            android:textSize="15dp"/>
+
+    <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:src="@drawable/clip"/>
+
+    <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView2"
+            android:src="@drawable/clipextra"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"/>
+
+</RelativeLayout>
+

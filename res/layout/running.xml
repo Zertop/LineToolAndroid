@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context=".RunningTestsActivity">
+
+    <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/backgroundTests"
+            android:src="@drawable/back"
+            android:scaleType="centerCrop"/>
+
+    <ImageView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:id="@+id/zertopLogo"
+            android:src="@drawable/logo"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"/>
+
+    <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Determining IP"
+            android:id="@+id/determiningCorrectIP"
+            android:enabled="true"
+            android:clickable="false"
+            android:singleLine="false"
+            android:layout_marginTop="33dp"
+            android:checked="false"
+            android:layout_marginLeft="10dp"
+            android:layout_below="@+id/runningTests"
+            android:layout_alignStart="@+id/zertopLogo"/>
+
+    <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pinging Equipment"
+            android:id="@+id/pingingTelkomEquipment"
+            android:enabled="true"
+            android:clickable="false"
+            android:singleLine="false"
+            android:layout_below="@+id/determiningCorrectIP"
+            android:layout_alignStart="@+id/determiningCorrectIP"
+            android:checked="false"/>
+
+    <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Generating Report"
+            android:id="@+id/generatingReport"
+            android:enabled="true"
+            android:clickable="false"
+            android:singleLine="false"
+            android:layout_below="@+id/pingingTelkomEquipment"
+            android:layout_alignStart="@+id/pingingTelkomEquipment"
+            android:checked="false"/>
+
+    <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Finishing Up"
+            android:id="@+id/finishingUp"
+            android:enabled="true"
+            android:clickable="false"
+            android:singleLine="false"
+            android:layout_below="@+id/generatingReport"
+            android:layout_alignStart="@+id/generatingReport"
+            android:checked="false"/>
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Running Tests"
+            android:id="@+id/runningTests"
+            android:layout_below="@+id/zertopLogo"
+            android:layout_alignStart="@+id/determiningCorrectIP"
+            android:layout_marginLeft="30dp"
+            android:textColor="#FFF"/>
+
+</RelativeLayout>
