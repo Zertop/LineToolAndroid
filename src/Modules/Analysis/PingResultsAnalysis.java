@@ -62,7 +62,7 @@ public class PingResultsAnalysis {
             }
 
             Pattern packetLossPattern = Pattern.compile("(\\d*)\\%\\ packet\\ loss");
-            Matcher packetLossMatcher = packetLossPattern.matcher(pingResults);
+            java.util.regex.Matcher packetLossMatcher = packetLossPattern.matcher(pingResults);
             if (packetLossMatcher.find()) {
                 packetLoss = Integer.parseInt(packetLossMatcher.group(1));
             } else {
@@ -81,7 +81,7 @@ public class PingResultsAnalysis {
             }
 
             Pattern packetLossPattern = Pattern.compile("(\\d*)\\.\\d*% packet\\ loss");
-            Matcher packetLossMatcher = packetLossPattern.matcher(pingResults);
+            java.util.regex.Matcher packetLossMatcher = packetLossPattern.matcher(pingResults);
             if (packetLossMatcher.find()) {
                 packetLoss = Integer.parseInt(packetLossMatcher.group(1));
             } else {

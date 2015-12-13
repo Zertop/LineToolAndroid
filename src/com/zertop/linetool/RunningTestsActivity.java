@@ -78,17 +78,17 @@ public class RunningTestsActivity extends Activity {
 
                 //Ping the IP
                 String pingResults = PingIP.run(determinedIP, 30);
-                Sleep.Time(1);
                 publishProgress(2);
+                Sleep.Time(1);
 
                 //Generate Report from Ping Results
                 Variables.report = new GenerateReport(pingResults);
-                Sleep.Time(1);
                 publishProgress(3);
+                Sleep.Time(1);
 
                 //Finish
-                Sleep.Time(1);
                 publishProgress(4);
+                Sleep.Time(1);
                 return null;
             }
 

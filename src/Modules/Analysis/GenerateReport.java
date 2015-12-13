@@ -90,7 +90,7 @@ public class GenerateReport {
             writerFormatted.println(pingResults);
             writerFormatted.println("[/CODE]");
 
-            //Close Writers
+            //SAVE AS TMP AND SAVE TO VARIABLES
             writerPlain.close();
             writerFormatted.close();
 
