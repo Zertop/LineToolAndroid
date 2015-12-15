@@ -77,7 +77,7 @@ public class RunningTestsActivity extends Activity {
                 publishProgress(1);
 
                 //Ping the IP
-                String pingResults = PingIP.run(determinedIP, 30);
+                String pingResults = PingIP.run(determinedIP, 30, 30);
                 publishProgress(2);
                 Sleep.Time(1);
 
